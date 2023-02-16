@@ -439,11 +439,14 @@ header {
   color: var(--accent-color);
 }
 
-.modal .submit {
+.inputs .submit {
+  position: absolute;
+
+  left: 50%;
+  transform: translateX(-50%);
+
   width: 169px;
   height: 56px;
-
-  margin: 0 120px 24px 120px;
 
   color: var(--white);
 
@@ -635,7 +638,7 @@ footer {
   padding-bottom: 100px;
 }
 
-.footer-list {
+/* .footer-list {
   display: flex;
 
   margin-left: -120px;
@@ -647,6 +650,10 @@ footer {
 
 .footer-list-item:last-child {
   margin-left: 80px;
+} */
+
+.studio-info {
+  display: flex;
 }
 
 footer .logo {
@@ -676,6 +683,8 @@ footer .title {
 }
 
 .social-container {
+  margin-left: 120px;
+
   width: 208px;
 }
 
@@ -708,7 +717,11 @@ footer .social-list {
   border-radius: 100%;
 }
 
-.footer-list-item .form-input {
+.subscribe {
+  margin-left: 80px;
+}
+
+.subscribe .form-input {
   height: 40px;
   width: 264px;
 
@@ -726,7 +739,7 @@ footer .social-list {
   transition: border-color 250ms var(--timing-function);
 }
 
-.footer-list-item .form-input::placeholder {
+.subscribe .form-input::placeholder {
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
@@ -734,11 +747,11 @@ footer .social-list {
   color: var(--footer-placeholder);
 }
 
-.footer-list-item .form-input:focus-within {
+.subscribe .form-input:focus-within {
   border-color: var(--accent-color);
 }
 
-.subscribe {
+.button-subscribe {
   width: 165px;
   height: 40px;
 
@@ -754,8 +767,8 @@ footer .social-list {
   transition: background-color 250ms var(--timing-function);
 }
 
-.subscribe:hover,
-.subscribe:focus {
+.button-subscribe:hover,
+.button-subscribe:focus {
   background-color: var(--portfolio-button-bgc);
 }
 
