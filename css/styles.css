@@ -342,7 +342,7 @@ header {
 .modal .form {
   position: relative;
 
-  /* margin-top: 4px; */
+  margin-top: 4px;
 }
 
 .form .icon {
@@ -369,7 +369,6 @@ header {
   width: 100%;
   height: 40px;
 
-  margin-top: 4px;
   padding-left: 38px;
 
   border: 1px solid var(--form-border-color);
