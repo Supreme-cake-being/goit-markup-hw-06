@@ -236,6 +236,7 @@ header {
   background-color: var(--portfolio-button-bgc);
 }
 
+/* MOdal */
 .backdrop {
   position: fixed;
   top: 0;
@@ -266,6 +267,8 @@ header {
 
   width: 406px;
   height: 576px;
+
+  padding: 72px 24px 24px;
 
   background: var(--modal-bgc);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -303,15 +306,13 @@ header {
   font-size: 16px;
   line-height: 1.5;
 
-  margin-top: 72px;
+  margin-top: 0;
   margin-bottom: 16px;
-  text-align: center;
 }
 
 .inputs {
   position: relative;
 
-  margin-left: 24px;
   width: 360px;
 
   text-align: start;
@@ -329,7 +330,7 @@ header {
   display: flex;
   flex-direction: column;
 
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 
   font-size: 12px;
   line-height: 1.16;
@@ -340,6 +341,8 @@ header {
 
 .modal .form {
   position: relative;
+
+  /* margin-top: 4px; */
 }
 
 .form .icon {
@@ -358,13 +361,16 @@ header {
   border-color: var(--accent-color);
 }
 
+.form-input {
+  outline: none;
+}
+
 .modal .form-input {
   width: 100%;
   height: 40px;
 
+  margin-top: 4px;
   padding-left: 38px;
-  font-family: inherit;
-  font-size: inherit;
 
   border: 1px solid var(--form-border-color);
   border-radius: 4px;
@@ -638,20 +644,7 @@ footer {
   padding-bottom: 100px;
 }
 
-/* .footer-list {
-  display: flex;
-
-  margin-left: -120px;
-}
-
-.footer-list-item {
-  margin-left: 120px;
-}
-
-.footer-list-item:last-child {
-  margin-left: 80px;
-} */
-
+/* Info */
 .studio-info {
   display: flex;
 }
@@ -682,6 +675,7 @@ footer .title {
   margin-bottom: 16px;
 }
 
+/* Socials */
 .social-container {
   margin-left: 120px;
 
@@ -717,8 +711,15 @@ footer .social-list {
   border-radius: 100%;
 }
 
+/* Subscribe */
 .subscribe {
   margin-left: 80px;
+}
+
+.subs-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .subscribe .form-input {
@@ -755,7 +756,12 @@ footer .social-list {
   width: 165px;
   height: 40px;
 
-  margin-left: 22px;
+  margin-left: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
 
   font-size: 16px;
   line-height: 1.5;
@@ -770,16 +776,6 @@ footer .social-list {
 .button-subscribe:hover,
 .button-subscribe:focus {
   background-color: var(--portfolio-button-bgc);
-}
-
-.button-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.button-container .icon {
-  margin-left: 16px;
 }
 
 /* Portfolio */
